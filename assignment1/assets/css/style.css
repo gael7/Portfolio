@@ -66,10 +66,17 @@ p{
 h1, h2, h3{
 	font-family: Georgia, Times, "Times New Roman", serif;
 }
-h1{
+.h1rect{
 	float: left;
-	padding: 20px;
 	background-color: #4aaaa5;
+	height:70px;
+	width: auto ;
+	position: absolute;
+}
+h1{
+	position: relative;
+	top: 20px;
+	margin: 0 20px;
 	color: #ffffff;
 	font-size: 30px;
 	font-weight: bold;
@@ -95,7 +102,20 @@ section{
 	margin: 20px 0;
 	background-color: #ffffff;
 	width: 650px;
+	-webkit-animation-name: example;
+    -webkit-animation-duration: 1s;
+    animation-name: example;
+    animation-duration: 1s;
 }
+@-webkit-keyframes example {
+    from {background-color: #4aaaa5;}
+    to {background-color: lightgrey;}
+}
+@keyframes example {
+    from {background-color: #4aaaa5;}
+    to {background-color: lightgrey;}
+}
+
 hr{
 	border:0;
 	width: 610px;
@@ -109,6 +129,10 @@ aside{
 	margin-top: 20px;
 	background-color: #ffffff;
 	width: 270px;
+	-webkit-animation-name: example;
+    -webkit-animation-duration: 1s;
+    animation-name: example;
+    animation-duration: 1s;
 }
 #paragraph{
 	margin: 20px 20px 20px 0;
@@ -161,8 +185,10 @@ aside{
 .heading{
 	float: right;
 	color: lightgrey;
-	margin: 27px;
 	display: inline;
+	position: relative;
+	top: 27px;
+	right: 27px;
 }
 #me{
 	width: 150px;
@@ -283,7 +309,7 @@ a:link, a:visited, a:active{
 	padding: 2px 0px 2px 5px;
 }
 .heading{
-	margin: 27px 0;
+	right: 0px;
 }
 section{
 	width: 430px;
@@ -293,8 +319,8 @@ hr{
 	margin: 0 25px;
 }
 h1{
-	padding: 22px;
 	font-size: 26px;
+	margin: 0 25px;
 }
 h2{
 	padding:20px 20px 20px 25px;
@@ -377,16 +403,16 @@ a:link, a:visited, a:active{
 	font-size: 14px;
 }
 #about{
-	padding: 2px 6px 2px 5px;
+	padding: 0px 6px 0px 5px;
 }
 #portfolio{
-	padding: 2px 5px 2px 5px;
+	padding: 0px 5px 0px 5px;
 }
 #contact{
-	padding: 2px 0px 2px 5px;
+	padding: 0px 0px 0px 5px;
 }
 .heading{
-	margin: 27px 0;
+	right: 0;
 }
 section{
 	width: 512px;
@@ -396,15 +422,11 @@ hr{
 	margin: 0 25px;
 }
 h1{
-	padding: 24px;
-	background-color: #4aaaa5;
-	color: #ffffff;
 	font-size: 22px;
-	font-weight: bold;
-	display: inline;
+	margin: 0 25px;
 }
 h2{
-	padding:20px 20px 20px 20px;
+	padding:20px 20px 20px 25px;
 	font-size: 22px;
 }
 h3{
@@ -486,7 +508,7 @@ form{
 
 }
 .content{
-	width: 100%;
+	width: 360px;
 }
 .footer{
 	width: 100%;
@@ -508,19 +530,28 @@ a:link, a:visited, a:active{
 	padding: 2px 33px 2px 33px;
 }
 .heading{
-	float: left;
-	margin: 25px 0;
+	clear: both;
+	top: 95px;
+	height: 70px;
+	position: absolute;
+    left:50%;
+    margin-left:-198px;
 }
+
 section{
-	margin: 20px 20px;
 	width: 360px;
+    position: relative;
 }
+
 hr{
 	width: 310px;
 	margin: 0 25px;
 }
+.h1rect{
+	width: 100%;
+}
 h1{
-	padding: 24px 64px;
+	text-align: center;
 	display: block;
 }
 h2{
@@ -545,9 +576,8 @@ p{
 	margin: 0 25px;
 }
 aside{
-	float: left;
 	width: 360px;
-	margin: 0 0 20px 20px;
+    position: relative;
 }
 #github, #stackoverflow, #linkedin{
 	width:43px;
@@ -563,7 +593,7 @@ aside{
 	margin: 10px 15px 15px 5px;
 }
 #hrhead{
-	width: 400px;
+	width: auto;
 }
 #hrconnect{
 	width: 310px;
