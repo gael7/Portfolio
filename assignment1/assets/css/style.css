@@ -205,22 +205,22 @@ aside{
 	position: relative;
 }
 .hangman{
-	background-image: url(/Users/gaelarrambide/Desktop/Bootcamp/Week1/Basic-Portfolio/assets/images/hangman.jpg);
+	background-image: url(../images/hangman.jpg);
 }
 .rpg{
-	background-image: url(/Users/gaelarrambide/Desktop/Bootcamp/Week1/Basic-Portfolio/assets/images/rpg.jpg);
+	background-image: url(../images/rpg.jpg);
 }
 .trivia{
 	clear: left;
-	background-image: url(/Users/gaelarrambide/Desktop/Bootcamp/Week1/Basic-Portfolio/assets/images/trivia.jpg);
+	background-image: url(../images/trivia.jpg);
 	float: left;
 }
 .rutgers{
-	background-image: url(/Users/gaelarrambide/Desktop/Bootcamp/Week1/Basic-Portfolio/assets/images/rutgers.jpg);
+	background-image: url(../images/rutgers.jpg);
 }
 .rock{
 	clear: left;
-	background-image: url(/Users/gaelarrambide/Desktop/Bootcamp/Week1/Basic-Portfolio/assets/images/rock.jpg);
+	background-image: url(../images/rock.jpg);
 	float: left;
 }
 #hangman, #rpg, #trivia, #rutgers, #rock{
