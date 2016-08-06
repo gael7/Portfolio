@@ -3,7 +3,7 @@ html, body{
 }
 body{
 	width: 100%;
-	background-image: url(/Users/gaelarrambide/Desktop/Bootcamp/Week1/Basic-Portfolio/assets/images/cork.png);
+	background-image: url(../images/cork.png);
 	background-color: transparent;
 }
 .header{
